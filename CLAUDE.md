@@ -6,6 +6,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static single-page website for **(주)네오비플랜** — a Seoul-registered 정비사업전문관리업체 (urban redevelopment/maintenance project management company). No build system, no package manager, no framework. Open `index.html` directly in a browser to preview.
 
+## Git & Deployment
+
+- **Repository**: https://github.com/jhey-biz/neobplan
+- **Live site**: https://jhey-biz.github.io/neobplan/
+- **Branch**: `main` → GitHub Pages serves from repo root (`/`)
+- **`gh` CLI path on Windows**: `/c/Program Files/GitHub CLI/gh.exe` — add to PATH with `export PATH="$PATH:/c/Program Files/GitHub CLI"` if `gh` is not found in the current shell session
+- **Tracked data files**: only `data/CI/PNG/WHITE.png` is committed; all other `data/` files are git-ignored (see `.gitignore`)
+
+Typical update flow:
+```bash
+git add <files>
+git commit -m "설명"
+git push
+```
+If push is rejected (remote has newer commits): `git pull --rebase` then `git push`.
+
 ## File Structure
 
 ```
@@ -58,10 +74,10 @@ Sections are `<section id="...">` in this order:
 | id | Content |
 |---|---|
 | `hero` | Full-screen hero with animated stats counters |
-| `greeting` | 대표 인사말 (CEO message, 이의홍 배상) |
+| `greeting` | 대표 인사말 (CEO message, 박창선 배상) |
 | `overview` | 회사개요 + 주요자문업체 |
 | `goal` | 사업목표 |
-| `ceo` | 대표자 소개 (career timeline) |
+| `ceo` | 조직 소개 — COO 이의홍 career timeline |
 | `org` | 회사조직도 |
 | `services` | 주요 업무수행 |
 | `strengths` | 업무 특장점 |
@@ -108,5 +124,6 @@ All company content originates from `data/네오비플랜 지명원(2025.05).pdf
 
 - 법인설립: 2011년 5월 31일 / 사업자등록번호: 211-88-61342
 - 정비사업전문관리업 등록번호: 제 2023-32호 (서울특별시, 2023.10.31)
-- 대표: 이의홍 / 주소: 서울시 강서구 방화대로 34길 92, 305호
+- **현재 대표**: 박창선 (PDF 원본의 이의홍에서 변경됨 — 이의홍은 COO로 재직 중)
+- 주소: 서울시 강서구 방화대로 34길 92, 305호
 - 전화: 02)596-5500 / 팩스: 0303)3441-3154
