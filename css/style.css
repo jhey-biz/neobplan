@@ -1153,6 +1153,7 @@ img { max-width: 100%; display: block; }
   max-width: 640px;
   margin: 60px auto 0;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* iOS 스크롤 정상화 */
   padding: 0 20px 24px;
 }
 
@@ -1162,6 +1163,7 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   align-items: center;
   min-width: 440px;
+  width: 100%; /* 컨테이너가 440px 초과 시 확장 */
 }
 
 /* ── 단독 노드 행 ─── */
@@ -1839,4 +1841,16 @@ img { max-width: 100%; display: block; }
   .career-item::before { display: none; }
   .career-timeline { padding-left: 0; }
   .career-timeline::before { display: none; }
+}
+
+/* ─── 조직도 모바일 보정 ───────────────────────────────
+   org-box 가로폭을 줄여 퍼센트 기반 분기선과 셀 중심이
+   일치하도록 유지 (level3 셀 ≈ 110px, 박스 ≈ 102px)    */
+@media (max-width: 600px) {
+  .ochart-wrap { padding: 0 4px 24px; }
+  .org-box {
+    padding: 10px 12px;
+    font-size: 0.83rem;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 → 박스 폭 고정 */
+  }
 }
