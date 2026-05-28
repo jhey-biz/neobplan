@@ -308,9 +308,19 @@
 
 .ev-vs-arrow {
   align-self: center;
-  font-size: 2rem;
+  justify-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(58, 170, 53, 0.18), rgba(58, 170, 53, 0.06));
+  border: 1px solid rgba(58, 170, 53, 0.3);
+  font-size: 1.6rem;
   font-weight: 900;
-  color: var(--green);
+  color: var(--green-dark);
+  line-height: 1;
 }
 
 /* ===== Feature Grid ===== */
@@ -1289,8 +1299,11 @@
 
 @media (max-width: 768px) {
   .ev-section { padding: 64px 0; }
-  .ev-vs-grid { grid-template-columns: 1fr; }
-  .ev-vs-arrow { transform: rotate(90deg); }
+  .ev-vs-grid { grid-template-columns: 1fr; gap: 20px; }
+  .ev-vs-arrow {
+    transform: rotate(90deg);
+    margin: 4px auto;
+  }
   .ev-feature-grid { grid-template-columns: 1fr; }
   .ev-law-grid { grid-template-columns: 1fr; }
   .ev-sec-grid { grid-template-columns: 1fr; }
