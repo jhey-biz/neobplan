@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="elecVot - 도시정비법 기반 조합원 전자투표·동의 솔루션. KISA 본인확인기관 연동, 1인 1표제, 5년 감사로그. (주)네오비플랜 제공.">
+  <meta name="keywords" content="elecVot, 전자투표, 조합 전자투표, 재개발 전자투표, 재건축 전자투표, 도시정비법 전자투표, 조합 동의서, 가로주택정비, 정비사업 디지털">
+  <title>elecVot — 조합원 전자투표·동의 솔루션 | (주)네오비플랜</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/elecvot.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" role="navigation" aria-label="주메뉴">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="네오비플랜 홈">
+        <img src="data/CI/PNG/WHITE.png" alt="NEOBPLAN 로고" onerror="this.style.display='none'">
+        <div>
+          <span class="nav-logo-text">네오비플랜</span>
+          <span class="nav-logo-sub">정비사업전문관리업체</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html#overview" class="nav-link">회사소개</a></li>
+        <li><a href="index.html#services" class="nav-link">주요 업무</a></li>
+        <li><a href="index.html#projects" class="nav-link">업무실적</a></li>
+        <li><a href="elecvot.html" class="nav-link active">전자투표 솔루션</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">문의하기</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="모바일 메뉴">
+    <ul>
+      <li><a href="index.html#greeting" class="nav-link">대표 인사말</a></li>
+      <li><a href="index.html#overview" class="nav-link">회사소개</a></li>
+      <li><a href="index.html#services" class="nav-link">주요 업무</a></li>
+      <li><a href="index.html#projects" class="nav-link">업무실적</a></li>
+      <li><a href="elecvot.html" class="nav-link active">전자투표 솔루션</a></li>
+      <li><a href="index.html#contact" class="nav-link nav-cta" style="display:inline-block;margin-top:8px;">문의하기</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="ev-hero">
+    <div class="ev-hero-bg">
+      <div class="ev-hero-grid"></div>
+    </div>
+    <div class="ev-hero-inner">
+      <div class="ev-eyebrow">elecVot · Powered by NEOBPLAN</div>
+      <h1 class="ev-hero-title">
+        조합원 전자투표·동의의 <br>
+        <span class="accent">새로운 기준</span>을 제시합니다
+      </h1>
+      <p class="ev-hero-desc">
+        도시정비법 제35·36·45·50·74조에 부합하는 합법적 전자투표·동의 수령 시스템.<br>
+        KISA 본인확인기관 연동, 1인 1표제, 비밀투표 보장, 5년 감사 로그.<br>
+        조합설립 동의부터 총회 의결, 결과 공고문 PDF 보관까지 한 번에.
+      </p>
+
+      <div class="ev-hero-actions">
+        <a href="#features" class="ev-btn ev-btn-primary">
+          <span>핵심 기능 살펴보기</span>
+          <span>→</span>
+        </a>
+        <a href="index.html#contact" class="ev-btn ev-btn-outline">
+          <span>📞</span>
+          <span>무료 시연 신청</span>
+        </a>
+      </div>
+
+      <div class="ev-hero-stats">
+        <div class="ev-stat">
+          <div class="ev-stat-num">1<span class="unit">인 1표</span></div>
+          <div class="ev-stat-label">도시정비법 1인 1표제 완전 준수<br>공유자 대표조합원 자동 식별</div>
+        </div>
+        <div class="ev-stat">
+          <div class="ev-stat-num">5<span class="unit">년</span></div>
+          <div class="ev-stat-label">감사 로그·인증 이력<br>해시 체인 무결성 보장</div>
+        </div>
+        <div class="ev-stat">
+          <div class="ev-stat-num">99.9<span class="unit">%</span></div>
+          <div class="ev-stat-label">AWS 서울 리전 기반<br>국내 PII 보관 · 다중 가용영역</div>
+        </div>
+        <div class="ev-stat">
+          <div class="ev-stat-num">0<span class="unit">건</span></div>
+          <div class="ev-stat-label">평문 주민번호 저장<br>CI/DI 해시 + AES-256 PII 암호화</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Why elecVot — Before / After ===================== -->
+  <section class="ev-section">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">왜 elecVot인가</div>
+        <h2 class="section-title">종이 총회의 한계,<br>elecVot이 해결합니다</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-vs-grid">
+        <div class="ev-vs-card before">
+          <h3>🗂️ 기존 종이 방식</h3>
+          <ul>
+            <li>총회·동의서 정족수 미달로 인한 일정 지연</li>
+            <li>위임장 진위 분쟁 — 인감 위조·명의도용 가능성</li>
+            <li>우편 동의서 회수율 저조 (통상 30~50%)</li>
+            <li>서면 결의서·동의서 보관·검색 비효율</li>
+            <li>집계 수작업 → 사람 오류·재집계 분쟁</li>
+            <li>고령 조합원·원거리 거주자 참여 곤란</li>
+            <li>인쇄·우편비 + 인력 동원 비용 누적</li>
+          </ul>
+        </div>
+
+        <div class="ev-vs-arrow">→</div>
+
+        <div class="ev-vs-card after">
+          <h3>✨ elecVot 도입 후</h3>
+          <ul>
+            <li>SMS·알림톡 1회 발송 → 모바일에서 즉시 참여</li>
+            <li>본인확인기관 CI/DI 매칭 + 양측 본인확인 위임</li>
+            <li>리마인더 자동 발송으로 참여율 대폭 상승</li>
+            <li>해시 체인 감사 로그로 5년 위·변조 방지</li>
+            <li>실시간 자동 집계 + 정족수·가결률 자동 판정</li>
+            <li>모바일 친화 UI — 50·60·70대 어르신도 직관적</li>
+            <li>우편 발송 비용·인쇄비·인력비 동시 절감</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Core Features ===================== -->
+  <section id="features" class="ev-section bg-alt">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">핵심 기능</div>
+        <h2 class="section-title">정비사업 전 과정을 포괄하는<br>전자투표·동의 통합 모듈</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-feature-grid">
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon">🗳️</div>
+          <h3>전자투표·동의 (1인 1표제)</h3>
+          <p>도시정비법 제45조 의결권 행사 + 제35·36·50조 동의서 수령을 단일 모듈로 지원. 공유자그룹 대표조합원만 토큰 발급.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">의결권</span>
+            <span class="ev-feature-tag">동의서</span>
+            <span class="ev-feature-tag">재투표 허용</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon orange">🔐</div>
+          <h3>본인확인 (KISA 지정기관)</h3>
+          <p>NICE평가정보 등 KISA 지정 본인확인기관 API 연동.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">CI/DI 매칭</span>
+            <span class="ev-feature-tag">시행령 §42</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon navy">👥</div>
+          <h3>위임(proxy) 접수·승인</h3>
+          <p>위임인·수임인 양측 본인확인 필수. 위임장 PDF 업로드 + 관리자 승인 워크플로. 본인확인 시효 7일 자동 검증.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">양측 인증</span>
+            <span class="ev-feature-tag">시효 검증</span>
+            <span class="ev-feature-tag">감사 추적</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon">📬</div>
+          <h3>우편·서면 투표 입력</h3>
+          <p>전자 미참여 조합원의 우편 동의서·투표용지를 관리자가 직접 입력. 전자투표 우선 원칙 자동 적용 — 중복 시 전자 채택.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">전자 우선</span>
+            <span class="ev-feature-tag">인감 첨부</span>
+            <span class="ev-feature-tag">취합 입력</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon orange">🛡️</div>
+          <h3>투표 철회 처리</h3>
+          <p>회차 종료 후 확정 전까지 오프라인 접수 + 운영자 승인 워크플로. 행은 보존하고 집계만 제외 — 분쟁 시 행위 이력 추적.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">행 보존</span>
+            <span class="ev-feature-tag">증빙 첨부</span>
+            <span class="ev-feature-tag">상태 전이</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon navy">📊</div>
+          <h3>실시간 자동 집계</h3>
+          <p>안건별 정족수·가결률 즉시 산출. consent는 전체 대비, resolution은 참석자 대비 자동 분기. 우편 취합 수치 합산 지원.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">자동 판정</span>
+            <span class="ev-feature-tag">취합 합산</span>
+            <span class="ev-feature-tag">최신 1건 유효</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon">📄</div>
+          <h3>결과 공고문 PDF</h3>
+          <p>Pretendard 한글 폰트 임베드 PDF 자동 생성. 결과 확정 시 자동 보관 + 운영자 수동 재생성. 영구 보존용 사본.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">자동 보관</span>
+            <span class="ev-feature-tag">한글 임베드</span>
+            <span class="ev-feature-tag">조합 양식</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon orange">🧾</div>
+          <h3>본인 영수증 PDF</h3>
+          <p>조합원이 본인 제출 직후 SHA-256 receipt hash 포함 PDF 다운로드. 회차 종료 후에도 발급 가능 — 본인의 표 행사 증빙.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">SHA-256</span>
+            <span class="ev-feature-tag">조합원 다운로드</span>
+            <span class="ev-feature-tag">상시 발급</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon">🔍</div>
+          <h3>감사 로그 (해시 체인)</h3>
+          <p>모든 행위가 append-only 감사 로그에 적재. prev_hash → row_hash 체인으로 위·변조 즉시 탐지. DB 트리거로 UPDATE/DELETE 차단.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">append-only</span>
+            <span class="ev-feature-tag">위변조 탐지</span>
+            <span class="ev-feature-tag">기간 필터</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon orange">📥</div>
+          <h3>명부 일괄 임포트</h3>
+          <p>Excel(.xlsx) / CSV 양식 다운로드 → 일괄 업로드. (이름, 전화번호) 매칭 upsert로 재임포트 시 member.id 보존 → CRM 이력 유지.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">Excel·CSV</span>
+            <span class="ev-feature-tag">upsert</span>
+            <span class="ev-feature-tag">양식 제공</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon navy">📨</div>
+          <h3>알림 발송 (SMS·알림톡·이메일)</h3>
+          <p>회차 공고·시작·종료·결과 자동 발송 + 미투표자 리마인더. 카카오 알림톡 사전 승인 템플릿 + 변수 치환. 발송 이력 5년 보관.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">SMS</span>
+            <span class="ev-feature-tag">알림톡</span>
+            <span class="ev-feature-tag">자동 리마인더</span>
+          </div>
+        </div>
+
+        <div class="ev-feature-card">
+          <div class="ev-feature-icon">🏷️</div>
+          <h3>조합원 CRM</h3>
+          <p>성향 태그·자유 메모·미팅 이력 관리. 재임포트로 ID 보존 → 이력 유실 없음. 명부 초기화는 이력 존재 시 자동 차단.</p>
+          <div class="ev-feature-tags">
+            <span class="ev-feature-tag">태그·메모</span>
+            <span class="ev-feature-tag">미팅 이력</span>
+            <span class="ev-feature-tag">이력 보존</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Screen Preview ===================== -->
+  <section class="ev-section">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">화면 미리보기</div>
+        <h2 class="section-title">조합원 모바일 — 누구나 직관적으로</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-mockups">
+        <!-- Mobile mockup -->
+        <div class="ev-phone">
+          <div class="ev-phone-screen">
+            <div class="ev-phone-header">
+              <div class="proj">XX동 가로주택정비사업조합</div>
+              <div class="name">홍길동 조합원님</div>
+            </div>
+            <div class="ev-phone-body">
+              <div class="ev-phone-meeting">
+                <span class="badge">진행중 · 의결</span>
+                <div class="title">제5차 정기총회</div>
+                <div class="meta">2026.06.01 09:00 ~ 06.03 18:00<br>안건 3건 / 미참여 2건</div>
+              </div>
+
+              <div style="font-size:0.7rem; font-weight:700; color:var(--text-dark); margin:14px 0 8px;">
+                제1안건. 시공자 선정의 건
+              </div>
+
+              <div class="ev-phone-radio checked">
+                <span class="dot"></span>
+                <span>찬성</span>
+              </div>
+              <div class="ev-phone-radio">
+                <span class="dot"></span>
+                <span>반대</span>
+              </div>
+              <div class="ev-phone-radio">
+                <span class="dot"></span>
+                <span>기권</span>
+              </div>
+            </div>
+            <div class="ev-phone-cta">의결 제출</div>
+          </div>
+        </div>
+
+        <!-- Feature list -->
+        <div class="ev-mockup-features">
+          <div class="ev-mockup-feature">
+            <h4>📱 모바일 우선 UX</h4>
+            <p>Pretendard 한글 폰트, 글래스 헤더, 하단 탭바, thumb-zone 제출 버튼, 카드형 선택 옵션 — 어르신도 한 손으로 직관적 탭.</p>
+          </div>
+          <div class="ev-mockup-feature">
+            <h4>🔗 SMS 링크로 즉시 진입</h4>
+            <p>조합 발송 SMS·알림톡의 현장 전용 링크 탭 → 본인확인 → 안건 화면 직행. 별도 앱 설치 불필요, 가입 절차 없음.</p>
+          </div>
+          <div class="ev-mockup-feature">
+            <h4>♻️ 기간 내 재투표 허용</h4>
+            <p>마음이 바뀌면 마감 전까지 다시 제출 가능. 모든 제출 이력은 감사용으로 보존되고, 최신 1건만 유효표로 집계.</p>
+          </div>
+          <div class="ev-mockup-feature">
+            <h4>🧾 제출 직후 영수증 PDF</h4>
+            <p>본인 선택 옵션·제출 시각·SHA-256 receipt hash가 포함된 영수증 PDF를 즉시 다운로드. 본인의 의사 행사 확정 증빙.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Admin Dashboard Preview ===================== -->
+  <section class="ev-section bg-alt">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">관리자 대시보드</div>
+        <h2 class="section-title">정비업체·조합 사무국이 한눈에 운영</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-dashboard">
+        <div class="ev-dashboard-bar">
+          <span class="dot red"></span>
+          <span class="dot yel"></span>
+          <span class="dot grn"></span>
+          <span class="url">vote.neobplan.com/admin/results/제5차-정기총회</span>
+        </div>
+        <div class="ev-dashboard-body">
+          <div class="ev-dashboard-side">
+            <div class="ev-dashboard-side-item">📋 회차 관리</div>
+            <div class="ev-dashboard-side-item">👥 조합원 명부</div>
+            <div class="ev-dashboard-side-item">🗳️ 투표 운영</div>
+            <div class="ev-dashboard-side-item">📬 우편 입력</div>
+            <div class="ev-dashboard-side-item">🤝 위임 승인</div>
+            <div class="ev-dashboard-side-item active">📊 집계·결과</div>
+            <div class="ev-dashboard-side-item">📨 알림 발송</div>
+            <div class="ev-dashboard-side-item">🔍 감사 로그</div>
+          </div>
+          <div class="ev-dashboard-main">
+            <div class="ev-dashboard-title">제5차 정기총회 · 제1안건 집계 결과</div>
+            <div class="ev-dashboard-sub">유효 토큰 312 / 전자 224 + 우편 71 + 취합 17 · 가결률 기준 1/2</div>
+
+            <div class="ev-tally-grid">
+              <div class="ev-tally-card">
+                <div class="lbl">참석률</div>
+                <div class="val">94.5%</div>
+              </div>
+              <div class="ev-tally-card">
+                <div class="lbl">찬성</div>
+                <div class="val">72.4%</div>
+              </div>
+              <div class="ev-tally-card">
+                <div class="lbl">정족수</div>
+                <div class="val">충족 ✓</div>
+              </div>
+            </div>
+
+            <div class="ev-bar">
+              <div class="yes">찬성 226</div>
+              <div class="no">반대 68</div>
+              <div class="abst">기권 18</div>
+            </div>
+
+            <div style="margin-top:18px; font-size:0.78rem; color:var(--gray-600); line-height:1.7;">
+              ✅ 정족수 1/2 충족 · 가결률 1/2 초과 → <strong style="color:var(--green-dark);">가결</strong><br>
+              📄 결과 공고문 PDF 자동 생성 완료 · 감사 로그 row_hash 검증 OK
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Legal Compliance ===================== -->
+  <section class="ev-section">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">법적 근거</div>
+        <h2 class="section-title">도시정비법·정보통신망법<br>주요 조항 완벽 대응</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-law-grid">
+        <div class="ev-law-card">
+          <div class="article">도시정비법 §35·§36</div>
+          <h4>조합설립 동의</h4>
+          <p>토지등소유자 전체 대비 75% 동의 + 부속 동의 항목(개인정보 활용 등)</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">도시정비법 §45·§74</div>
+          <h4>총회 의결</h4>
+          <p>안건별 정족수·가결률 자동 산출 + 일반의결·특별의결 분기</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">도시정비법 §50</div>
+          <h4>사업시행계획 동의</h4>
+          <p>토지등소유자 동의 + 부속 동의서·인감증명·서명 양식 적재</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">시행령 §42</div>
+          <h4>본인확인 요건</h4>
+          <p>KISA 지정 본인확인기관 API 호출 — 단독 간편인증은 차단(CI/DI 미발급)</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">정보통신망법 §23조의2~3</div>
+          <h4>본인확인기관 인증</h4>
+          <p>NICE 등 본인확인기관 트랙 라우팅 — CI/DI 발급 매트릭스 확보</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">개인정보보호법</div>
+          <h4>PII 최소수집·암호화</h4>
+          <p>주민등록번호 비저장 / CI/DI 해시 / 전화번호 AES-256-GCM 암호화</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">전자서명법</div>
+          <h4>전자서명·동의서 기명</h4>
+          <p>동의서 손글씨 캔버스(PNG) 또는 본인확인 갈음 타이핑 — 회차별 선택</p>
+        </div>
+        <div class="ev-law-card">
+          <div class="article">KISA 가이드</div>
+          <h4>5년 인증이력 보존</h4>
+          <p>auth_events 무기한 적재 + 공급사 5년 보존 약정 + 본인확인기관 원격 보존(3중 증빙)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Security & Trust ===================== -->
+  <section class="ev-section bg-dark">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">보안·신뢰</div>
+        <h2 class="section-title" style="color:white;">분쟁에서 흔들리지 않는<br>3중 증빙·검증 가능한 신뢰 구조</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-sec-grid">
+        <div class="ev-sec-card">
+          <div class="icon">🇰🇷</div>
+          <h4>AWS 서울 리전</h4>
+          <p>모든 개인정보는 ap-northeast-2 국내 리전에만 저장. 해외 리전 사용 0건 — 개인정보 국외 이전 이슈 원천 차단.</p>
+        </div>
+        <div class="ev-sec-card">
+          <div class="icon">🔗</div>
+          <h4>감사 로그 해시 체인</h4>
+          <p>blockchain 없이도 변조 탐지 가능한 prev_hash → row_hash 체인. DB 트리거가 UPDATE·DELETE를 원천 차단.</p>
+        </div>
+        <div class="ev-sec-card">
+          <div class="icon">🔐</div>
+          <h4>PII 암호화·해시</h4>
+          <p>주민번호 비저장, CI/DI는 서버측 pepper + SHA-256 해시, 전화번호는 AES-256-GCM, S3는 KMS SSE 강제.</p>
+        </div>
+        <div class="ev-sec-card">
+          <div class="icon">🤐</div>
+          <h4>비밀투표 secrecy split</h4>
+          <p>전자투표 행은 member_id를 직접 보유하지 않음 — vote_token을 매개로 분리해 우발적 노출 최소화.</p>
+        </div>
+        <div class="ev-sec-card">
+          <div class="icon">🛂</div>
+          <h4>다중 인증 · 권한 분리</h4>
+          <p>운영자: 이메일+비밀번호(argon2id)+TOTP / 조합원: KISA 본인확인 — 두 경로 코드·세션·라우팅 완전 분리.</p>
+        </div>
+        <div class="ev-sec-card">
+          <div class="icon">📜</div>
+          <h4>NICE 자체점검 7항 대응</h4>
+          <p>평문 노출·파라미터 변조·재사용 방지·접근통제·TLS 1.2+ 등 NICE 본인확인서비스 이용기관 자체점검 체크리스트 완전 대응 설계.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Architecture ===================== -->
+  <section class="ev-section">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">시스템 아키텍처</div>
+        <h2 class="section-title">검증된 클라우드 위에 구축한<br>운영 친화적 단일 코드베이스</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-arch">
+
+        <div class="ev-arch-row cols-2">
+          <div class="ev-arch-box navy">
+            <div class="tag">조합원</div>
+            <div class="name">모바일 웹</div>
+            <div class="meta">Next.js · Pretendard · 글래스 헤더 · 하단 탭바</div>
+          </div>
+          <div class="ev-arch-box navy">
+            <div class="tag">정비업체 · 조합</div>
+            <div class="name">관리자 대시보드</div>
+            <div class="meta">Next.js · Auth.js · 권한 매트릭스</div>
+          </div>
+        </div>
+
+        <div class="ev-arch-fork"></div>
+
+        <div class="ev-arch-row cols-2">
+          <div class="ev-arch-box brand" style="grid-column: span 2;">
+            <div class="tag">단일 코드베이스</div>
+            <div class="name">Next.js 15 App Router (Node.js LTS · TypeScript)</div>
+            <div class="meta">조합원 라우트 /m · 관리자 라우트 /admin — 코드·세션·미들웨어 분리</div>
+          </div>
+        </div>
+
+        <div class="ev-arch-conn"></div>
+
+        <div class="ev-arch-row cols-3">
+          <div class="ev-arch-box orange">
+            <div class="tag">External · KISA</div>
+            <div class="name">본인확인기관 API</div>
+            <div class="meta">NICE / KCB / SCI</div>
+          </div>
+          <div class="ev-arch-box orange">
+            <div class="tag">External · 알림</div>
+            <div class="name">SMS·알림톡·이메일</div>
+            <div class="meta">SENS / NHN / SES</div>
+          </div>
+          <div class="ev-arch-box orange">
+            <div class="tag">External · 결제 (선택)</div>
+            <div class="name">CMS 자금관리</div>
+            <div class="meta">자체 연동 · 향후 확장</div>
+          </div>
+        </div>
+
+        <div class="ev-arch-conn"></div>
+
+        <div class="ev-arch-row cols-4">
+          <div class="ev-arch-box">
+            <div class="tag">AWS · DB</div>
+            <div class="name">RDS PostgreSQL 16</div>
+            <div class="meta">Multi-AZ · 자동 백업</div>
+          </div>
+          <div class="ev-arch-box">
+            <div class="tag">AWS · Compute</div>
+            <div class="name">ECS Fargate</div>
+            <div class="meta">서버리스 · 무중단 배포</div>
+          </div>
+          <div class="ev-arch-box">
+            <div class="tag">AWS · Storage</div>
+            <div class="name">S3 + KMS</div>
+            <div class="meta">위임장·인감·공고문 PDF</div>
+          </div>
+          <div class="ev-arch-box">
+            <div class="tag">AWS · Edge</div>
+            <div class="name">ALB + ACM</div>
+            <div class="meta">TLS 1.2+ · HSTS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Scenarios ===================== -->
+  <section class="ev-section bg-alt">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">활용 시나리오</div>
+        <h2 class="section-title">정비사업 전 단계에서<br>elecVot이 적용됩니다</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-scenario-grid">
+        <div class="ev-scenario">
+          <div class="num">01</div>
+          <h4>조합설립 동의서 징구</h4>
+          <div class="law">도시정비법 §35·§36 · 토지등소유자 75% 동의</div>
+          <p>토지등소유자 전체 대비 동의율 산출 + 개인정보 활용 동의 등 부속 항목 수령. 우편 동의는 인감증명 첨부 강제·전자 동의는 본인확인 갈음.</p>
+        </div>
+
+        <div class="ev-scenario">
+          <div class="num">02</div>
+          <h4>창립총회·임시총회 의결</h4>
+          <div class="law">도시정비법 §45·§74 · 참석자 대비 정족수</div>
+          <p>창립총회·임시총회 의결사항 일괄 안건 등록 후 전자·우편·위임 채널 통합 집계. 위임은 양측 본인확인 + 관리자 승인.</p>
+        </div>
+
+        <div class="ev-scenario">
+          <div class="num">03</div>
+          <h4>시공자 선정 총회</h4>
+          <div class="law">도시정비법 §29 · 경쟁입찰 후보 의결</div>
+          <p>다수 후보 안건의 안건별 옵션 선택 + 본인 영수증 발급으로 분쟁 시 본인 표 행사 명확화. 결과 공고문 PDF 자동 보관.</p>
+        </div>
+
+        <div class="ev-scenario">
+          <div class="num">04</div>
+          <h4>사업시행계획·관리처분계획 의결</h4>
+          <div class="law">도시정비법 §50·§74 · 첨부 PDF 본문 + 의결</div>
+          <p>계획안 PDF·이미지 업로드 후 의결. 안건별 본문은 사용자 모바일에서 즉시 열람 — 자료 미수령 분쟁 차단.</p>
+        </div>
+
+        <div class="ev-scenario">
+          <div class="num">05</div>
+          <h4>정관 변경·이사 선임</h4>
+          <div class="law">도시정비법 §45 · 일반의결 또는 특별의결</div>
+          <p>안건당 일반/특별 의결 구분 + 정족수·가결률 자동 적용. 다수 안건 동시 진행 가능.</p>
+        </div>
+
+        <div class="ev-scenario">
+          <div class="num">06</div>
+          <h4>가로주택·소규모재건축 동의</h4>
+          <div class="law">빈집 및 소규모 주택 정비에 관한 특례법</div>
+          <p>가로주택정비사업·소규모재건축·소규모재개발 등 특례법 대상 사업도 동일 흐름으로 진행. 조합 정관별 동의율 기준 운영.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Adoption Process ===================== -->
+  <section class="ev-section">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">도입 절차</div>
+        <h2 class="section-title">4주 이내 운영 시작 가능</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-process">
+        <div class="ev-process-step">
+          <div class="circle">01</div>
+          <h4>무료 상담·시연</h4>
+          <p>현장 요건 파악, 화면 시연, 견적 산출. 약 1시간 소요.</p>
+        </div>
+        <div class="ev-process-step">
+          <div class="circle">02</div>
+          <h4>현장 설정·명부 임포트</h4>
+          <p>조합 정보 등록, 명부 Excel 일괄 업로드, 동의서 양식 커스터마이즈.</p>
+        </div>
+        <div class="ev-process-step">
+          <div class="circle">03</div>
+          <h4>회차 등록·공고</h4>
+          <p>회차·안건·옵션 등록 후 SMS·알림톡 일괄 발송. 본인확인 연동 테스트.</p>
+        </div>
+        <div class="ev-process-step">
+          <div class="circle">04</div>
+          <h4>운영·결과 확정</h4>
+          <p>실시간 모니터링, 우편 입력, 위임 승인, 마감 후 자동 집계·공고문 PDF 보관.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Synergy with NEOBPLAN ===================== -->
+  <section class="ev-section bg-alt">
+    <div class="container">
+      <div class="ev-section-head">
+        <div class="section-badge">네오비플랜과 함께</div>
+        <h2 class="section-title">기술과 정비사업 전문성의 결합</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="ev-synergy">
+        <div class="ev-synergy-text">
+          <h3>20년 정비사업 경험 위에<br>구축된 <span class="accent">유일한 솔루션</span></h3>
+          <p>
+            elecVot은 정비사업 현장에서 실제로 마주치는 분쟁 사례·운영 문제·법령 요건을
+            반영해 설계되었습니다. 일반 IT 솔루션과 달리 도시정비법 조항 매핑·1인 1표제·
+            공유자그룹 식별·우편 인감 첨부·위임 시효 등 <strong>정비사업 특유의 요건</strong>이
+            처음부터 데이터 모델에 녹아 있습니다.
+          </p>
+          <p>
+            <strong>(주)네오비플랜의 정비사업전문관리업 등록과 서울시 정비사업 코디네이터
+            위촉 경력</strong>이 이 시스템의 정확성과 신뢰의 근거입니다.
+          </p>
+          <ul class="ev-synergy-bullets">
+            <li><strong>서울특별시 정비사업분야 표창</strong> 수상 회사가 제공</li>
+            <li><strong>SH서울주택도시공사 자문위원</strong> 운영 경험 반영</li>
+            <li><strong>50~60개 협력업체 네트워크</strong>를 통한 통합 운영</li>
+            <li><strong>4,300세대 규모 프로젝트</strong>까지 검증된 운영 역량</li>
+          </ul>
+        </div>
+
+        <div class="ev-synergy-visual">
+          <div class="ev-synergy-card green">
+            <h4>정비사업전문관리</h4>
+            <p>(주)네오비플랜의 컨설팅·인허가·총회 운영</p>
+          </div>
+          <div class="ev-synergy-plus">＋</div>
+          <div class="ev-synergy-card orange">
+            <h4>디지털 솔루션</h4>
+            <p>elecVot 전자투표·동의·CRM 플랫폼</p>
+          </div>
+          <div class="ev-synergy-plus" style="font-size:1.3rem; color: var(--green-dark);">＝</div>
+          <div class="ev-synergy-card">
+            <h4>End-to-End 정비사업 운영</h4>
+            <p>조합설립부터 청산까지 통합 관리</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="ev-section">
+    <div class="container">
+      <div class="ev-cta">
+        <div class="ev-cta-inner">
+          <h2>지금 elecVot 무료 시연을 신청하세요</h2>
+          <p>
+            현장 요건을 듣고 30분 만에 화면 시연부터 견적까지 안내해 드립니다.<br>
+            도입 부담 없는 무료 상담, 지금 시작하세요.
+          </p>
+          <div class="ev-cta-actions">
+            <a href="tel:02-596-5500" class="ev-btn ev-btn-primary">
+              <span>📞</span>
+              <span>02-596-5500 전화 상담</span>
+            </a>
+            <a href="mailto:neobplan@hanmail.net?subject=elecVot 도입 문의" class="ev-btn ev-btn-outline">
+              <span>✉️</span>
+              <span>이메일로 문의하기</span>
+            </a>
+            <a href="data/elecVot-brochure.pdf" download class="ev-btn ev-btn-outline">
+              <span>📥</span>
+              <span>PDF 자료 다운로드</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="data/CI/PNG/WHITE.png" alt="NEOBPLAN 로고" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-text">
+          Copyright &copy; 2026 (주)네오비플랜. All Rights Reserved.<br>
+          서울특별시 강서구 방화대로34길 92, 3층 305호 | 사업자등록번호: 211-88-61342 | 대표: 박창선<br>
+          정비사업전문관리업 등록번호: 제 2023-32호 (서울특별시, 2023.10.31)
+        </div>
+        <div class="footer-slogan">
+          elecVot — 조합원 전자투표·동의의<br>새로운 기준
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Print as PDF button -->
+  <button class="ev-print-btn" onclick="window.print()" aria-label="PDF로 저장하기">
+    <span>📄</span>
+    <span>PDF로 저장</span>
+  </button>
+
+  <!-- Back to Top Button -->
+  <button class="back-top" aria-label="맨 위로 이동">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
