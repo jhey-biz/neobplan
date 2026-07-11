@@ -1806,9 +1806,20 @@ img { max-width: 100%; display: block; }
    RESPONSIVE
    ======================================== */
 
-@media (max-width: 1024px) {
+/* 상단 메뉴 11개(솔루션 2종 포함)가 1200~1366px 구간에서 넘치지 않도록 압축 */
+@media (max-width: 1366px) {
+  .nav-inner { padding: 0 20px; }
+  .nav-link { padding: 8px 9px; font-size: 0.8rem; }
+  .nav-cta { padding: 8px 16px !important; margin-left: 4px; }
+}
+
+/* 1200px 이하는 압축해도 11개 메뉴가 들어가지 않음 → 햄버거 메뉴로 전환 */
+@media (max-width: 1200px) {
   .nav-menu { display: none; }
   .hamburger { display: flex; }
+}
+
+@media (max-width: 1024px) {
   .overview-grid { grid-template-columns: 1fr; }
   .ceo-inner { grid-template-columns: 1fr; }
   .ceo-card { max-width: 400px; margin: 0 auto; }

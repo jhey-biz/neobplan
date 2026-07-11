@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="omrAgent - 서면결의서 AI 판독·집계 솔루션. 스캔 PDF 업로드만으로 OMR 자동 판독, 안건별 찬반·선거 집계, Excel 보고까지 한 번에. (주)네오비플랜 제공.">
+  <meta name="keywords" content="omrAgent, AI 판독, OMR 판독, 서면결의서 집계, 총회 개표, 조합 선거 집계, 서면결의서 스캔, 정비사업 총회, 자동 개표">
+  <title>AI 판독·집계 솔루션 — 서면결의서 자동 판독 omrAgent | (주)네오비플랜</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/omragent.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" role="navigation" aria-label="주메뉴">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="네오비플랜 홈">
+        <img src="data/CI/PNG/WHITE.png" alt="NEOBPLAN 로고" onerror="this.style.display='none'">
+        <div>
+          <span class="nav-logo-text">네오비플랜</span>
+          <span class="nav-logo-sub">정비사업전문관리업체</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html#greeting" class="nav-link">대표 인사말</a></li>
+        <li><a href="index.html#overview" class="nav-link">회사소개</a></li>
+        <li><a href="index.html#goal" class="nav-link">사업목표</a></li>
+        <li><a href="index.html#ceo" class="nav-link">조직 소개</a></li>
+        <li><a href="index.html#org" class="nav-link">조직도</a></li>
+        <li><a href="index.html#services" class="nav-link">주요 업무</a></li>
+        <li><a href="index.html#strengths" class="nav-link">특장점</a></li>
+        <li><a href="index.html#projects" class="nav-link">업무실적</a></li>
+        <li><a href="elecvot.html" class="nav-link">전자투표 솔루션</a></li>
+        <li><a href="omragent.html" class="nav-link active">AI 판독·집계 솔루션</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">문의하기</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="모바일 메뉴">
+    <ul>
+      <li><a href="index.html#greeting" class="nav-link">대표 인사말</a></li>
+      <li><a href="index.html#overview" class="nav-link">회사소개</a></li>
+      <li><a href="index.html#goal" class="nav-link">사업목표</a></li>
+      <li><a href="index.html#ceo" class="nav-link">조직 소개</a></li>
+      <li><a href="index.html#org" class="nav-link">조직도</a></li>
+      <li><a href="index.html#services" class="nav-link">주요 업무</a></li>
+      <li><a href="index.html#strengths" class="nav-link">업무 특장점</a></li>
+      <li><a href="index.html#projects" class="nav-link">주요 업무실적</a></li>
+      <li><a href="index.html#other-projects" class="nav-link">기타 업무실적</a></li>
+      <li><a href="elecvot.html" class="nav-link">전자투표 솔루션</a></li>
+      <li><a href="omragent.html" class="nav-link active">AI 판독·집계 솔루션</a></li>
+      <li><a href="index.html#contact" class="nav-link nav-cta" style="display:inline-block;margin-top:8px;">문의하기</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="om-hero">
+    <div class="om-hero-bg">
+      <div class="om-hero-grid"></div>
+    </div>
+    <div class="om-hero-inner">
+      <div class="om-eyebrow">omrAgent · AI 판독·집계 솔루션</div>
+      <h1 class="om-hero-title">
+        쌓여 있는 서면결의서,<br>
+        <span class="accent">AI가 판독하고</span> <span class="accent-orange">자동 집계</span>합니다
+      </h1>
+      <p class="om-hero-desc">
+        스캐너로 출력한 서면결의서 PDF를 업로드하면 OMR 판독 → 안건별 집계 →
+        검토·보정 → Excel 보고까지 한 번에.<br>
+        찬성·반대, N지선다, 선거(후보 다중선택) 안건을 모두 지원하고,<br>
+        모든 데이터는 사내 PC에만 저장됩니다.
+      </p>
+
+      <div class="om-hero-actions">
+        <a href="#features" class="om-btn om-btn-primary">
+          <span>핵심 기능 살펴보기</span>
+          <span>→</span>
+        </a>
+        <a href="index.html#contact" class="om-btn om-btn-outline">
+          <span>📞</span>
+          <span>무료 시연 신청</span>
+        </a>
+      </div>
+
+      <div class="om-hero-stats">
+        <div class="om-stat">
+          <div class="om-stat-num">92<span class="unit">% 감소</span></div>
+          <div class="om-stat-label">검토 필요 건수 13 → 1건<br>운영 현장 152건 실측</div>
+        </div>
+        <div class="om-stat">
+          <div class="om-stat-num">2<span class="unit">초 이내</span></div>
+          <div class="om-stat-label">결의서 PDF 1건 판독<br>4-스레드 병렬 처리</div>
+        </div>
+        <div class="om-stat">
+          <div class="om-stat-num">1,000<span class="unit">건 ≈ 8분</span></div>
+          <div class="om-stat-label">대량 일괄 처리·실시간 진행률<br>집계는 1초 이내 산출</div>
+        </div>
+        <div class="om-stat">
+          <div class="om-stat-num">0<span class="unit">건</span></div>
+          <div class="om-stat-label">개인정보 외부 전송<br>사내 PC 설치형 — 클라우드 불필요</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Why omrAgent — Before / After ===================== -->
+  <section class="om-section">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">왜 omrAgent인가</div>
+        <h2 class="section-title">수작업 개표의 한계,<br>omrAgent가 해결합니다</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-vs-grid">
+        <div class="om-vs-card before">
+          <h3>🗂️ 기존 수작업 개표</h3>
+          <ul>
+            <li>수백~수천 장 결의서를 사람이 한 장씩 확인 — 며칠 소요</li>
+            <li>집계 오류·누락 → 재검표 요구·분쟁으로 확산</li>
+            <li>개표 근거가 사람의 기억뿐 — 사후 검증 불가</li>
+            <li>모호한 마킹도 전량 재확인 — 선별 기준 없음</li>
+            <li>선거(후보 다중선택) 안건은 집계 난이도 급상승</li>
+            <li>개표 인력 동원 비용 + 보고서 작성 수작업</li>
+          </ul>
+        </div>
+
+        <div class="om-vs-arrow">→</div>
+
+        <div class="om-vs-card after">
+          <h3>✨ omrAgent 도입 후</h3>
+          <ul>
+            <li>스캔 PDF 폴더 업로드만으로 자동 판독·집계</li>
+            <li>1,000건도 수 분 내 처리 — 총회 당일 결과 확인</li>
+            <li>모든 판독에 채움 비율 수치 기록 — 근거 기반 검증</li>
+            <li>모호한 마킹만 '검토 필요'로 자동 선별·격리</li>
+            <li>선거 안건 득표 순위·당선권까지 자동 산출</li>
+            <li>집계·원시데이터 Excel 보고서 즉시 다운로드</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Core Features ===================== -->
+  <section id="features" class="om-section bg-alt">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">핵심 기능</div>
+        <h2 class="section-title">서면결의서 개표 전 과정을<br>하나의 시스템으로</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-feature-grid">
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon">🖨️</div>
+          <h3>양식 자동 인식 (템플릿 등록)</h3>
+          <p>빈 결의서 양식 PDF 업로드만으로 표 구조와 기표 원 위치를 자동 감지. 망점 인쇄 스캔은 검증된 원 감지 방식으로 자동 전환.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">표 구조 분석</span>
+            <span class="om-feature-tag">감지 확인 이미지</span>
+            <span class="om-feature-tag">수동 편집기</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon orange">🔍</div>
+          <h3>OMR 자동 판독</h3>
+          <p>배경 밝기 대비 상대 임계값 방식으로 마킹 여부를 판정 — 스캐너별·페이지별 밝기 편차에 강건. 찬성·반대·기권·무효 자동 분류.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">채움 비율 분석</span>
+            <span class="om-feature-tag">밝기 편차 대응</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon navy">🗳️</div>
+          <h3>3가지 안건 유형 지원</h3>
+          <p>찬성/반대 2지, N지선다(복수 마킹 = 무효), 선거형 후보 다중선택(최대 선출 인원 검증)까지 한 양식 안에서 혼합 지원.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">찬반</span>
+            <span class="om-feature-tag">N지선다</span>
+            <span class="om-feature-tag">후보 다중선택</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon">🏆</div>
+          <h3>득표 순위·당선권 산출</h3>
+          <p>선거 안건은 후보별 득표수를 표준경쟁순위로 정렬 — 동점자는 같은 등수, 다음 등수는 인원만큼 밀림. 당선 정원 이내 후보는 '당선권' 표시.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">동점 동순위</span>
+            <span class="om-feature-tag">당선권 강조</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon orange">🧐</div>
+          <h3>검토 필요 자동 선별</h3>
+          <p>채움 비율이 경계값 근처인 모호한 마킹만 '검토 필요'로 분류해 원본 PDF와 함께 별도 폴더에 격리. 전수 재검표가 필요 없습니다.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">review 폴더</span>
+            <span class="om-feature-tag">원본 즉시 열람</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon navy">✏️</div>
+          <h3>인라인 보정 + 감사 추적</h3>
+          <p>대시보드에서 드롭다운으로 결과를 직접 수정 — 즉시 집계·Excel에 반영. 최초 수정 시 원본 판정과 수정 시각을 보존해 감사 추적 가능.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">원본 판정 보존</span>
+            <span class="om-feature-tag">수정 이력</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon">📊</div>
+          <h3>실시간 집계 대시보드</h3>
+          <p>안건별 찬성·반대·기권·무효·검토 필요 건수와 비율, 분포 막대를 한 화면에. 집계 셀 클릭으로 해당 폴더가 탐색기에 바로 열립니다.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">건수+비율 표기</span>
+            <span class="om-feature-tag">셀 클릭 폴더 열기</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon orange">📑</div>
+          <h3>Excel 보고서 2종</h3>
+          <p>안건별 집계 Excel + PDF별 원시데이터 Excel. 원시데이터의 하단 집계는 수식 기반 — 셀 값을 고치면 집계가 즉시 자동 갱신됩니다.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">집계 Excel</span>
+            <span class="om-feature-tag">원시데이터</span>
+            <span class="om-feature-tag">수식 자동 갱신</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon navy">🔤</div>
+          <h3>안건 제목 자동 추출 (OCR)</h3>
+          <p>양식 PDF의 내장 텍스트를 우선 추출하고, 이미지 스캔은 한국어 AI OCR로 폴백. 잘못 읽힌 제목은 표에서 클릭 한 번으로 수정.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">한국어 OCR</span>
+            <span class="om-feature-tag">인라인 편집</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon">🎯</div>
+          <h3>4층 좌표 보정 파이프라인</h3>
+          <p>기울기 보정 → 전역 좌표 정렬 → 국소 재정렬 → 상대 임계값 측정. 기울어진 스캔·망점 인쇄에서도 마킹 좌표를 정확히 추적합니다.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">deskew</span>
+            <span class="om-feature-tag">RANSAC 정렬</span>
+            <span class="om-feature-tag">무회귀 설계</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon orange">⚡</div>
+          <h3>대량 병렬 일괄 처리</h3>
+          <p>4-스레드 병렬로 1,000건을 3~8분에 처리. 진행 바·로그로 실시간 현황 확인, 폴더 감시 모드로 신규 스캔 자동 처리도 지원.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">병렬 처리</span>
+            <span class="om-feature-tag">진행률 표시</span>
+            <span class="om-feature-tag">폴더 감시</span>
+          </div>
+        </div>
+
+        <div class="om-feature-card">
+          <div class="om-feature-icon navy">🖥️</div>
+          <h3>사내 PC 설치형 (온프레미스)</h3>
+          <p>조합원 개인정보가 담긴 결의서가 외부 서버로 나가지 않습니다. 인터넷 연결 없이 PC 한 대로 개표 전 과정 운영 가능.</p>
+          <div class="om-feature-tags">
+            <span class="om-feature-tag">외부 전송 0건</span>
+            <span class="om-feature-tag">오프라인 운영</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 판독 미리보기 ===================== -->
+  <section class="om-section">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">판독 미리보기</div>
+        <h2 class="section-title">스캔 그대로 올리면, 근거와 함께 판독합니다</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-mockups">
+        <!-- 서면결의서 목업 -->
+        <div class="om-sheet" aria-label="서면결의서 판독 예시">
+          <div class="om-sheet-badge">AI 판독 완료 · 0.9초</div>
+          <div class="om-sheet-title">서 면 결 의 서</div>
+          <div class="om-sheet-sub">제5차 정기총회 · OO구역 주택재개발정비사업조합</div>
+
+          <div class="om-sheet-table">
+            <div class="om-sheet-row head">
+              <div>안건</div>
+              <div>찬성</div>
+              <div>반대</div>
+            </div>
+            <div class="om-sheet-row">
+              <div>제1호 조합 기수행업무 추인의 건</div>
+              <div><span class="om-mark filled det-y"><span class="ratio">0.87</span></span></div>
+              <div><span class="om-mark det-n"></span></div>
+            </div>
+            <div class="om-sheet-row">
+              <div>제2호 정관 일부 개정의 건</div>
+              <div><span class="om-mark det-y"></span></div>
+              <div><span class="om-mark filled det-n"><span class="ratio">0.91</span></span></div>
+            </div>
+            <div class="om-sheet-row">
+              <div>제3호 예산(안) 승인의 건</div>
+              <div><span class="om-mark half det-u"><span class="ratio">0.21 검토</span></span></div>
+              <div><span class="om-mark det-n"></span></div>
+            </div>
+            <div class="om-sheet-row">
+              <div>제4호 시공자 선정 동의의 건</div>
+              <div><span class="om-mark filled det-y"><span class="ratio">0.83</span></span></div>
+              <div><span class="om-mark det-n"></span></div>
+            </div>
+          </div>
+
+          <div class="om-sheet-result">
+            <span class="ok">✓ 찬성 2 · 반대 1</span>
+            <span>검토 필요 1건 → review 폴더</span>
+          </div>
+        </div>
+
+        <!-- Feature list -->
+        <div class="om-mockup-features">
+          <div class="om-mockup-feature">
+            <h4>🖨️ 스캐너 PDF 그대로 업로드</h4>
+            <p>ADF 스캐너로 출력한 PDF를 폴더째 선택하면 끝. 별도 변환·전처리 없이 원본 그대로 판독합니다.</p>
+          </div>
+          <div class="om-mockup-feature">
+            <h4>📏 판독 근거를 수치로 기록</h4>
+            <p>모든 기표 원의 채움 비율(fill ratio)이 결과에 남습니다. "왜 찬성으로 집계됐나"에 수치로 답할 수 있습니다.</p>
+          </div>
+          <div class="om-mockup-feature">
+            <h4>🧐 모호한 마킹만 골라냅니다</h4>
+            <p>경계값 근처의 애매한 마킹은 '검토 필요'로 자동 격리. 파일명 클릭으로 원본 PDF를 열어 육안 확인 후 바로 보정합니다.</p>
+          </div>
+          <div class="om-mockup-feature">
+            <h4>🔍 감지 결과 육안 검수</h4>
+            <p>양식 등록 직후 찬성(초록)·반대(파랑) 감지 원 위치를 이미지로 확인하고, 틀리면 전체화면 편집기로 직접 교정합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 판독 정확도 — 4층 좌표 보정 ===================== -->
+  <section class="om-section bg-dark">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">판독 정확도</div>
+        <h2 class="section-title" style="color:white;">좌표 틀어짐을 단계마다 흡수하는<br>4층 보정 파이프라인</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-pipeline">
+        <div class="om-pipe-step">
+          <div class="no">1</div>
+          <h4>기울기 보정</h4>
+          <p>표선 각도 기반 하이브리드 보정으로 스캔 기울기를 정렬.</p>
+          <div class="catch">잡는 오차: 스캔 시 용지 기울어짐 (±5°)</div>
+          <div class="fb">실패 시: 보정 보류 — 원본 유지</div>
+        </div>
+        <div class="om-pipe-step">
+          <div class="no">2</div>
+          <h4>전역 좌표 정렬</h4>
+          <p>인쇄된 기표 원을 감지해 양식 템플릿과 매칭 — 회전·배율·이동을 일괄 보정.</p>
+          <div class="catch">잡는 오차: 망점 인쇄 스캔의 잔류 회전 2~3°</div>
+          <div class="fb">실패 시: 항등변환으로 안전 복귀</div>
+        </div>
+        <div class="om-pipe-step">
+          <div class="no">3</div>
+          <h4>국소 재정렬</h4>
+          <p>측정 직전 각 기표 원의 실제 중심을 ±25px 범위에서 재탐색.</p>
+          <div class="catch">잡는 오차: 행마다 다른 국소 어긋남 (±17px)</div>
+          <div class="fb">실패 시: 원본 좌표 사용</div>
+        </div>
+        <div class="om-pipe-step">
+          <div class="no">4</div>
+          <h4>상대 임계값 측정</h4>
+          <p>주변 배경 밝기 대비 채움 비율로 마킹 여부 판정.</p>
+          <div class="catch">잡는 오차: 페이지별 스캔 밝기 편차</div>
+          <div class="fb">모호 구간은 '검토 필요'로 분류</div>
+        </div>
+      </div>
+
+      <div class="om-pipe-note">
+        🛡️ <strong>무회귀 설계</strong> — 어느 층이 실패해도 이전 동작으로 안전하게 되돌아갑니다.
+        실제 운영 현장 152건 실측에서 검토 필요 건수 <strong>13건 → 1건(-92%)</strong>, 좌표 어긋남으로 인한 오판 사례도 함께 해소되었습니다.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Admin Dashboard Preview ===================== -->
+  <section class="om-section bg-alt">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">웹 대시보드</div>
+        <h2 class="section-title">개표 상황실을 브라우저 한 화면에</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-dashboard">
+        <div class="om-dashboard-bar">
+          <span class="dot red"></span>
+          <span class="dot yel"></span>
+          <span class="dot grn"></span>
+          <span class="url">localhost:8000 — omrAgent 판독·집계 대시보드</span>
+        </div>
+        <div class="om-dashboard-body">
+          <div class="om-dashboard-side">
+            <div class="om-dashboard-side-item">📋 현장 관리</div>
+            <div class="om-dashboard-side-item">🔍 감지 확인</div>
+            <div class="om-dashboard-side-item">✏️ 템플릿 편집</div>
+            <div class="om-dashboard-side-item">📁 일괄 처리</div>
+            <div class="om-dashboard-side-item active">📊 안건별 집계</div>
+            <div class="om-dashboard-side-item">🧐 개별 투표 현황</div>
+            <div class="om-dashboard-side-item">⬇️ Excel 다운로드</div>
+          </div>
+          <div class="om-dashboard-main">
+            <div class="om-dashboard-title">OO구역 재개발 · 제5차 정기총회 집계 결과</div>
+            <div class="om-dashboard-sub">서면결의서 1,024건 · 4-스레드 병렬 처리 · 소요 5분 42초</div>
+
+            <div class="om-tally-grid">
+              <div class="om-tally-card">
+                <div class="lbl">총 접수</div>
+                <div class="val">1,024</div>
+              </div>
+              <div class="om-tally-card">
+                <div class="lbl">정상 처리</div>
+                <div class="val">1,021</div>
+              </div>
+              <div class="om-tally-card warn">
+                <div class="lbl">검토 필요</div>
+                <div class="val">3</div>
+              </div>
+              <div class="om-tally-card">
+                <div class="lbl">처리율</div>
+                <div class="val">99.7%</div>
+              </div>
+            </div>
+
+            <div class="om-bar">
+              <div class="yes">찬성 726</div>
+              <div class="no">반대 214</div>
+              <div class="abst">기권 81</div>
+            </div>
+
+            <div style="margin-top:18px; font-size:0.78rem; color:var(--gray-600); line-height:1.7;">
+              🧐 검토 필요 3건은 review 폴더에 자동 격리 — 파일명 클릭으로 원본 확인 후 인라인 보정<br>
+              🏆 선거 안건은 집계표 하단에 득표 순위·당선권 자동 표시 · ⬇️ 집계/원시데이터 Excel 즉시 다운로드
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 판정 기준 ===================== -->
+  <section class="om-section">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">판정 기준</div>
+        <h2 class="section-title">사람의 눈과 같은 기준으로,<br>기계의 일관성으로 판정합니다</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-verdict-grid">
+        <div class="om-verdict v-agree">
+          <div class="mark-demo">
+            <span class="om-mark filled"></span>
+            <span class="om-mark"></span>
+          </div>
+          <h4>찬성</h4>
+          <p>찬성 칸만 마킹됨</p>
+        </div>
+        <div class="om-verdict v-deny">
+          <div class="mark-demo">
+            <span class="om-mark"></span>
+            <span class="om-mark filled"></span>
+          </div>
+          <h4>반대</h4>
+          <p>반대 칸만 마킹됨</p>
+        </div>
+        <div class="om-verdict v-abst">
+          <div class="mark-demo">
+            <span class="om-mark"></span>
+            <span class="om-mark"></span>
+          </div>
+          <h4>기권</h4>
+          <p>두 칸 모두 미마킹</p>
+        </div>
+        <div class="om-verdict v-inv">
+          <div class="mark-demo">
+            <span class="om-mark filled"></span>
+            <span class="om-mark filled"></span>
+          </div>
+          <h4>무효</h4>
+          <p>두 칸 모두 마킹됨</p>
+        </div>
+        <div class="om-verdict v-unc">
+          <div class="mark-demo">
+            <span class="om-mark half"></span>
+            <span class="om-mark"></span>
+          </div>
+          <h4>검토 필요</h4>
+          <p>채움 비율이 경계값 근처 — 사람이 최종 확인</p>
+        </div>
+      </div>
+
+      <div class="om-verdict-multi">
+        <h4>선거(후보 다중선택) 안건 판정<span class="tag">후보 N명 중 최대 M명 선출</span></h4>
+        <div class="om-verdict-multi-rules">
+          <div>
+            <strong>✅ 유효</strong>
+            정상 마킹 1~M명 — 마킹된 후보 전원 득표 카운트 (M명 미만 선택도 유효)
+          </div>
+          <div>
+            <strong>🚫 무효</strong>
+            M+1명 이상 마킹 — 해당 결의서의 선택 전체를 무효 처리
+          </div>
+          <div>
+            <strong>⚪ 기권</strong>
+            마킹 없음
+          </div>
+          <div>
+            <strong>🧐 검토 필요</strong>
+            모호한 마킹 포함 — 확정 마킹만으로 이미 초과면 무효 우선
+          </div>
+        </div>
+        <div class="foot">
+          집계는 유효 결의서의 선택만 후보별 득표로 카운트하며, 무효 결의서의 마킹은 전부 제외됩니다.
+          득표 순위 표는 동점자를 같은 등수로 표기하고(1, 2, 2, 4…), 당선 정원 이내 후보를 '당선권'으로 강조합니다.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Scenarios ===================== -->
+  <section class="om-section bg-alt">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">활용 시나리오</div>
+        <h2 class="section-title">서면 개표가 있는 곳이라면<br>어디든 적용됩니다</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-scenario-grid">
+        <div class="om-scenario">
+          <div class="num">01</div>
+          <h4>총회 서면결의서 집계</h4>
+          <div class="law">도시정비법 §45 · 서면 의결권 행사</div>
+          <p>정기·임시총회 서면결의서 수백~수천 장을 당일 판독·집계. 안건별 찬성·반대·기권·무효 건수와 비율을 즉시 산출합니다.</p>
+        </div>
+
+        <div class="om-scenario">
+          <div class="num">02</div>
+          <h4>조합 임원·대의원 선거</h4>
+          <div class="law">후보 다중선택 · 득표 순위 자동 산출</div>
+          <p>후보 N명 중 최대 M명 선출 양식을 그대로 판독. 초과 마킹 무효 처리, 득표 순위와 당선권까지 자동으로 표시합니다.</p>
+        </div>
+
+        <div class="om-scenario">
+          <div class="num">03</div>
+          <h4>시공자 선정 총회</h4>
+          <div class="law">도시정비법 §29 · N지선다 안건</div>
+          <p>복수 후보 중 1개 선택 안건을 지원 — 2개 이상 마킹은 무효로 자동 분류. 후보별 득표 chip으로 결과를 한눈에 확인합니다.</p>
+        </div>
+
+        <div class="om-scenario">
+          <div class="num">04</div>
+          <h4>동의서 징구 집계</h4>
+          <div class="law">도시정비법 §35·§36 · 서면 동의</div>
+          <p>조합설립·사업시행 동의서의 동의 여부 마킹을 일괄 판독. 회수분을 스캔해 올리는 즉시 동의율 현황이 갱신됩니다.</p>
+        </div>
+
+        <div class="om-scenario">
+          <div class="num">05</div>
+          <h4>전자+서면 병행 총회</h4>
+          <div class="law">elecVot 연계 · 하이브리드 집계</div>
+          <p>전자투표는 elecVot으로, 서면결의서는 omrAgent로 — 두 채널의 집계를 합산해 총회 전체 결과를 완성합니다.</p>
+        </div>
+
+        <div class="om-scenario">
+          <div class="num">06</div>
+          <h4>공동주택·관리단 집회</h4>
+          <div class="law">집합건물법 · 공동주택관리법 서면결의</div>
+          <p>아파트 동별 대표자 선출, 집합건물 관리단 집회 등 정비사업 밖의 서면 투표도 동일한 흐름으로 판독·집계합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Adoption Process ===================== -->
+  <section class="om-section">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">사용 절차</div>
+        <h2 class="section-title">양식 등록부터 Excel 보고까지 4단계</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-process">
+        <div class="om-process-step">
+          <div class="circle">01</div>
+          <h4>현장 등록</h4>
+          <p>빈 결의서 양식 PDF 업로드 → 표 구조·기표 원 자동 감지, 감지 결과 이미지로 검수.</p>
+        </div>
+        <div class="om-process-step">
+          <div class="circle">02</div>
+          <h4>결의서 일괄 처리</h4>
+          <p>스캔 PDF 폴더 선택 → 병렬 판독, 진행 바·로그로 실시간 현황 확인.</p>
+        </div>
+        <div class="om-process-step">
+          <div class="circle">03</div>
+          <h4>검토·보정</h4>
+          <p>검토 필요 건만 원본 PDF 육안 확인 → 드롭다운 보정, 원본 판정·수정 시각 자동 기록.</p>
+        </div>
+        <div class="om-process-step">
+          <div class="circle">04</div>
+          <h4>Excel 보고</h4>
+          <p>안건별 집계 + 원시데이터 Excel 다운로드. 수식 기반이라 수정 시 집계 자동 갱신.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Synergy with elecVot / NEOBPLAN ===================== -->
+  <section class="om-section bg-alt">
+    <div class="container">
+      <div class="om-section-head">
+        <div class="section-badge">네오비플랜과 함께</div>
+        <h2 class="section-title">전자와 서면, 총회 집계의 완성</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="om-synergy">
+        <div class="om-synergy-text">
+          <h3>전자투표만으로 채울 수 없는<br><span class="accent">서면 채널의 정확도</span></h3>
+          <p>
+            총회 현장에는 언제나 서면결의서가 함께 접수됩니다. 고령 조합원, 전자 기기가
+            익숙하지 않은 분들의 의사도 똑같이 정확하게 집계되어야 합니다.
+            omrAgent는 이 서면 채널에 <strong>전자투표 수준의 속도·정확도·감사 추적</strong>을
+            부여합니다.
+          </p>
+          <p>
+            실제 정비사업 총회·선거 현장에서 운영하며 다듬은 시스템입니다 —
+            기울어진 스캔, 망점 인쇄 양식, 애매한 마킹 같은 <strong>현장의 변수</strong>가
+            처음부터 판독 파이프라인에 반영되어 있습니다.
+          </p>
+          <ul class="om-synergy-bullets">
+            <li><strong>실제 총회·선거 운영 현장</strong>에서 검증된 판독 엔진</li>
+            <li><strong>152건 실측 검토 필요 92% 감소</strong> — 개표 후 확인 부담 최소화</li>
+            <li><strong>elecVot 전자투표와 병행</strong> — 하이브리드 총회 통합 집계</li>
+            <li><strong>정비사업전문관리업 등록업체</strong>가 총회 운영까지 함께 지원</li>
+          </ul>
+        </div>
+
+        <div class="om-synergy-visual">
+          <div class="om-synergy-card green">
+            <h4>전자 채널</h4>
+            <p>elecVot 전자투표·동의 — 모바일로 즉시 참여</p>
+          </div>
+          <div class="om-synergy-plus">＋</div>
+          <div class="om-synergy-card orange">
+            <h4>서면 채널</h4>
+            <p>omrAgent AI 판독·집계 — 서면결의서 자동 개표</p>
+          </div>
+          <div class="om-synergy-plus" style="font-size:1.3rem; color: var(--green-dark);">＝</div>
+          <div class="om-synergy-card">
+            <h4>하이브리드 총회</h4>
+            <p>모든 조합원의 의사를 빠짐없이, 정확하게 집계</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="om-section">
+    <div class="container">
+      <div class="om-cta">
+        <div class="om-cta-inner">
+          <h2>지금 omrAgent 무료 시연을 신청하세요</h2>
+          <p>
+            사용 중인 결의서 양식을 보내주시면 실제 판독 화면으로 시연해 드립니다.<br>
+            도입 부담 없는 무료 상담, 지금 시작하세요.
+          </p>
+          <div class="om-cta-actions">
+            <a href="tel:02-596-5500" class="om-btn om-btn-primary">
+              <span>📞</span>
+              <span>02-596-5500 전화 상담</span>
+            </a>
+            <a href="mailto:neobplan@hanmail.net?subject=omrAgent AI 판독·집계 솔루션 도입 문의" class="om-btn om-btn-outline">
+              <span>✉️</span>
+              <span>이메일로 문의하기</span>
+            </a>
+            <a href="elecvot.html" class="om-btn om-btn-outline">
+              <span>🗳️</span>
+              <span>전자투표 솔루션 함께 보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="data/CI/PNG/WHITE.png" alt="NEOBPLAN 로고" onerror="this.style.display='none'">
+        </div>
+        <div class="footer-text">
+          Copyright &copy; 2026 (주)네오비플랜. All Rights Reserved.<br>
+          서울특별시 강서구 방화대로34길 92, 3층 305호 | 사업자등록번호: 211-88-61342 | 대표: 박창선<br>
+          정비사업전문관리업 등록번호: 제 2023-32호 (서울특별시, 2023.10.31)
+        </div>
+        <div class="footer-slogan">
+          omrAgent — 서면결의서<br>AI 판독·집계의 새로운 기준
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Print as PDF button -->
+  <button class="om-print-btn" onclick="window.print()" aria-label="PDF로 저장하기">
+    <span>📄</span>
+    <span>PDF로 저장</span>
+  </button>
+
+  <!-- Back to Top Button -->
+  <button class="back-top" aria-label="맨 위로 이동">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
