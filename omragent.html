@@ -95,8 +95,8 @@
 
       <div class="om-hero-stats">
         <div class="om-stat">
-          <div class="om-stat-num">92<span class="unit">% 감소</span></div>
-          <div class="om-stat-label">검토 필요 건수 13 → 1건<br>운영 현장 152건 실측</div>
+          <div class="om-stat-num">4<span class="unit">층 좌표 보정</span></div>
+          <div class="om-stat-label">기울어진 스캔·망점 인쇄도<br>단계별 보정으로 정확 판독</div>
         </div>
         <div class="om-stat">
           <div class="om-stat-num">2<span class="unit">초 이내</span></div>
@@ -104,7 +104,7 @@
         </div>
         <div class="om-stat">
           <div class="om-stat-num">1,000<span class="unit">건 ≈ 8분</span></div>
-          <div class="om-stat-label">대량 일괄 처리·실시간 진행률<br>집계는 1초 이내 산출</div>
+          <div class="om-stat-label">대량 일괄 처리 · 진행률 표시<br>집계는 1초 이내 산출</div>
         </div>
         <div class="om-stat">
           <div class="om-stat-num">0<span class="unit">건</span></div>
@@ -380,21 +380,21 @@
           <div class="no">1</div>
           <h4>기울기 보정</h4>
           <p>표선 각도 기반 하이브리드 보정으로 스캔 기울기를 정렬.</p>
-          <div class="catch">잡는 오차: 스캔 시 용지 기울어짐 (±5°)</div>
+          <div class="catch">잡는 오차: 스캔 시 용지 기울어짐</div>
           <div class="fb">실패 시: 보정 보류 — 원본 유지</div>
         </div>
         <div class="om-pipe-step">
           <div class="no">2</div>
           <h4>전역 좌표 정렬</h4>
           <p>인쇄된 기표 원을 감지해 양식 템플릿과 매칭 — 회전·배율·이동을 일괄 보정.</p>
-          <div class="catch">잡는 오차: 망점 인쇄 스캔의 잔류 회전 2~3°</div>
+          <div class="catch">잡는 오차: 기울기 보정 후 남는 미세한 잔류 회전</div>
           <div class="fb">실패 시: 항등변환으로 안전 복귀</div>
         </div>
         <div class="om-pipe-step">
           <div class="no">3</div>
           <h4>국소 재정렬</h4>
-          <p>측정 직전 각 기표 원의 실제 중심을 ±25px 범위에서 재탐색.</p>
-          <div class="catch">잡는 오차: 행마다 다른 국소 어긋남 (±17px)</div>
+          <p>측정 직전 각 기표 원의 실제 중심을 주변에서 재탐색.</p>
+          <div class="catch">잡는 오차: 행마다 미세하게 다른 국소 어긋남</div>
           <div class="fb">실패 시: 원본 좌표 사용</div>
         </div>
         <div class="om-pipe-step">
@@ -408,7 +408,8 @@
 
       <div class="om-pipe-note">
         🛡️ <strong>무회귀 설계</strong> — 어느 층이 실패해도 이전 동작으로 안전하게 되돌아갑니다.
-        실제 운영 현장 152건 실측에서 검토 필요 건수 <strong>13건 → 1건(-92%)</strong>, 좌표 어긋남으로 인한 오판 사례도 함께 해소되었습니다.
+        각 보정 층은 실제 총회·선거 개표 현장의 사례를 반영해 다듬어졌으며,
+        좌표 어긋남으로 인한 오판과 불필요한 검토 부담을 근본적으로 줄여 줍니다.
       </div>
     </div>
   </section>
@@ -672,7 +673,7 @@
           </p>
           <ul class="om-synergy-bullets">
             <li><strong>실제 총회·선거 운영 현장</strong>에서 검증된 판독 엔진</li>
-            <li><strong>152건 실측 검토 필요 92% 감소</strong> — 개표 후 확인 부담 최소화</li>
+            <li><strong>모호한 마킹만 자동 선별</strong> — 개표 후 확인 부담 최소화</li>
             <li><strong>elecVot 전자투표와 병행</strong> — 하이브리드 총회 통합 집계</li>
             <li><strong>정비사업전문관리업 등록업체</strong>가 총회 운영까지 함께 지원</li>
           </ul>
